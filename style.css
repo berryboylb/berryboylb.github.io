@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  background: url("./images/bg-intro-desktop.png"),
+    hsl(0, 25%, 97%) no-repeat center center fixed;
+  font-family: "Poppins", sans-serif;
+}
+
+.my-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .my-container {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .my-container {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .my-container {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .my-container {
+    width: 1140px;
+  }
+}
+.hide {
+  display: none;
+}
+
+header {
+  background-image: url("./assets/images/bg-hero-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: hsl(193, 100%, 96%);
+}
+nav {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav button {
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
+  outline: none;
+  width: 200px;
+  height: 60px;
+  color: hsl(192, 100%, 9%);
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+nav button:hover {
+  border: 1px solid hsl(322, 100%, 66%);
+  color: hsl(192, 100%, 9%);
+  transform: all 0.3ms ease-in;
+}
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerContent .content {
+  width: 47%;
+}
+.headerContent .content h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+}
+.headerContent .content p {
+  margin-top: 2rem;
+  line-height: 2;
+  color: hsl(192, 100%, 9%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.headerContent .content button {
+  margin-top: 2rem;
+  background-color: hsl(322, 100%, 66%);
+  border: 1px solid hsl(322, 100%, 66%);
+  outline: none;
+  width: 300px;
+  height: 60px;
+  color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+.headerContent .content button:hover {
+  background: none;
+  color: hsl(322, 100%, 66%);
+  transform: all 0.3ms ease-in;
+}
+.img-con {
+  width: 47%;
+  height: 450px;
+}
+.img-con img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+main {
+  margin-top: 7rem;
+}
+section > div {
+  border: 1px solid #eee;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem hsl(191, 16%, 73%);
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  min-height: 40vh;
+}
+.Card .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5rem;
+}
+.Card .content {
+  width: 50%;
+}
+.Card .content h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+}
+.Card .content p {
+  margin-top: 0.9rem;
+  line-height: 2;
+  color: hsl(192, 100%, 9%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.Card .img-con {
+  width: 35%;
+  height: 250px;
+}
+.Card .img-con img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+footer {
+  padding: 50px 0;
+  background-color: hsl(192, 100%, 9%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col {
+  flex: 1;
+  padding: 0 20px;
+  color: hsl(0, 0%, 100%);
+}
+.footerHeading {
+  font-size: 25px;
+  margin-left: 20px;
+  color: hsl(0, 0%, 100%);
+  text-transform: capitalize;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  display: block;
+  text-transform: capitalize;
+  text-decoration: none;
+  line-height: 2.5;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  color: #bbbbbb;
+}
+.footer-col .social-links i {
+  font-size: 900;
+}
+.footer-col ul li a:hover {
+  padding-left: 8px;
+  color: hsl(0, 0%, 100%);
+}
+.footer-col .social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  color: hsl(0, 0%, 100%);
+}
+.footer-col .social-links a:hover {
+  color: hsl(322, 100%, 66%);
+}
+.footer-col .inner {
+  display: flex;
+  margin: 1rem 0;
+}
+.footer-col .inner p {
+  margin-left: 1rem;
+  color: #bbbbbb;
+}
+.footer-col .inner img {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+  margin: 0.4rem 0;
+}
+.pinker > button {
+  margin-top: 2rem;
+  background-color: hsl(322, 100%, 66%);
+  border: 1px solid hsl(322, 100%, 66%);
+  outline: none;
+  width: 300px;
+  height: 60px;
+  color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+.pinker > button:hover {
+  background: none;
+  color: hsl(322, 100%, 66%);
+  transform: all 0.3ms ease-in;
+}
+.pinker h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.pinker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0 50%;
+  transform: translate(-50%);
+  position: relative;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 2px 2px 2px 2px #eee;
+  margin-top: 7rem;
+  margin-bottom: -3rem;
+}
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+  section div {
+    min-height: 15vh;
+  }
+  .img-con {
+    width: 40%;
+  }
+  .headerContent .content {
+    width: 60%;
+  }
+  .headerContent .content h1 {
+    font-size: 2.5rem;
+  }
+  .headerContent .content p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  .headerContent {
+    margin-top: -2rem;
+  }
+  main {
+    margin-top: 3.5rem;
+  }
+  .Card .inner {
+    margin: 2rem;
+  }
+  .Card .content p {
+    font-size: 1rem;
+  }
+  .footerContent {
+    flex-direction: column;
+  }
+
+  .footer-col {
+    margin-top: 1rem;
+  }
+
+  .footer-col .inner p, .footer-col p {
+    font-size: .8rem;
+  }
+  .footer-col .social-links {
+    display: flex;
+    font-size: 1rem;
+  }
+  .headerContent .content h1 {
+    font-size: 1.8rem;
+  }
+  .pinker > button {
+    width: 170px;
+    height: 50px;
+  }
+  .pinker h3 {
+    font-size: 1rem;
+  }
+  .footer-col ul li a {
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  .footer-col ul li {
+    margin: 1rem 0;
+  }
+  .footerHeading, .footer-col {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 576px) {
+  .hide{
+    display: block;
+  }
+  .show {
+    display: none;
+  }
+  nav {
+    padding: .5rem 0;
+  }
+  nav img {
+    height: 50px;
+    width: 100px;
+    object-fit: contain;
+  }
+  nav button {
+    width: 100px;
+    height: 50px;
+  }
+  .headerContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerContent .content{
+    margin-top: 3rem;
+    margin-bottom: 1.8rem;
+    width: 100%;
+    text-align: center;
+  }
+  .headerContent .content h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .headerContent .content p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .headerContent .content button {
+    margin-top: 2rem;
+    height: 50px;
+    font-size: 1rem;
+    width: 200px;
+  }
+  .img-con {
+    width: 100%;
+    height: 250px;
+  }
+  .img-con img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  
+  .Card .inner {
+    flex-direction: column;
+    
+    margin: 0;
+  }
+  .Card .content {
+    width: 100%;
+  }
+
+  .Card .my-container {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .Card .img-con {
+    width: 100%;
+  }
+
+  .Card .img-con img {
+   object-fit: cover;
+  }
+
+  
+  section {
+    padding: 1rem;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    
+  }
+  section > div {
+    padding: 0rem;
+    margin: 0rem 0;
+    border-radius: 30px;
+    min-height: auto;
+  }
+
+  section .img-con {
+    width: 100%;
+  }
+
+  .pinker {
+    width: 100%;
+    margin-bottom: -2rem;
+    margin-top: 1rem;
+    
+  }
+}
