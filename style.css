@@ -304,8 +304,12 @@ footer {
   .Card .inner {
     margin: 2rem;
   }
+
+  .Card .content h1 {
+    font-size: 1.2rem;
+  }
   .Card .content p {
-    font-size: 1rem;
+    font-size: .8rem;
   }
   .footerContent {
     flex-direction: column;
@@ -420,7 +424,7 @@ footer {
   }
 
   .Card .img-con img {
-   object-fit: cover;
+   object-fit: contain;
   }
 
   
